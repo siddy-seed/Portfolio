@@ -1,0 +1,112 @@
+.timeline {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 24px;
+  position: relative;
+}
+
+.timeline-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 28px;
+}
+
+.timeline-dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.timeline-connector {
+  flex: 1;
+  width: 2px;
+  background: var(--border-glass);
+  margin: 8px 0;
+  min-height: 32px;
+}
+
+.timeline-card {
+  padding: 28px 32px;
+  margin-bottom: 20px;
+  border-left: 2px solid transparent;
+  border-left-color: var(--item-accent, var(--accent));
+  transition: var(--transition);
+}
+
+.timeline-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.timeline-year {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.timeline-type {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.timeline-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  letter-spacing: -0.3px;
+}
+
+.timeline-subtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.timeline-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.timeline-tag {
+  font-size: 0.72rem;
+  padding: 3px 10px;
+  border: 1px solid;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .timeline-item { grid-template-columns: 36px 1fr; gap: 16px; }
+  .timeline-dot { width: 32px; height: 32px; font-size: 0.85rem; }
+  .timeline-card { padding: 20px; }
+}
