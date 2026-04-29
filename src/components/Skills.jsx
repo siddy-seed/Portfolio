@@ -20,7 +20,7 @@ const skillGroups = [
       { name: 'Python', level: 88 },
       { name: 'JavaScript', level: 85 },
       { name: 'TypeScript', level: 72 },
-      { name: 'C++', level: 75 },
+      { name: 'Tailwind CSS', level: 75 },
     ],
   },
   {
